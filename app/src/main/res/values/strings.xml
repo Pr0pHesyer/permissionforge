@@ -1,0 +1,68 @@
+<resources>
+    <string name="hint_请假人姓名">请假人姓名</string>
+    <string name="hint_辅导员姓名">辅导员姓名</string>
+    <string name="hint_时长">时长（小时）</string>
+    <string name="hint_地点">申请地点（学校位置）</string>
+    <string name="hint_请假原因">请假原因</string>
+    <string name="hint_目的地">目的地</string>
+    <string name="main_activity_caption">输入你的信息，以生成假条。</string>
+    <string name="generate">生成</string>
+
+    <string name="txt_top"><![CDATA[
+    <font color="#787878">请假类型：</font>
+    <font color="#000000">事假　　　　　</font>
+    <font color="#787878">需要离校：</font>
+    <font color="#000000">离校</font>
+    <br>
+    <font color="#787878">销假规则：</font>
+    <font color="#fbcc42">离校请假需要销假，非离校请假无需销假</font>
+    <br>
+    <font color="#787878">实际休假时间：</font>
+    <font color="#000000">%1$s ~ %2$s （共 %3$d 小时）</font>>
+    ]]>
+    </string>
+
+    <string name="txt_mid"><![CDATA[
+    <font color="#787878">开始时间：　 </font>
+    <font color="#000000">%1$s</font>
+    <br>
+    <font color="#787878">结束时间：　 </font>
+    <font color="#000000">%2$s</font>
+    <br>
+    <font color="#787878">审批流程：　 </font>
+    <font color="#000000">共1步 </font>
+    <font color="#97cbfa">查看></font>
+    <br>
+    <font color="#787878">紧急联系人： </font>
+    <font color="#000000">%3$s</font>
+    <br>
+    <font color="#787878">请假原因：　 </font>
+    <font color="#000000">%4$s</font>
+    <br>
+    <font color="#787878">发起位置：　 </font>
+    <font color="#97cbfa">%5$s</font>
+    <br>
+    <font color="#787878">抄送人：　　 </font>
+    <font color="#000000">无</font>
+    ]]>
+    </string>
+
+    <string name="txt_initiate"><![CDATA[
+    <font color="#787878">%1$s - 发起申请</font>
+    ]]></string>
+
+    <string name="txt_passed"><![CDATA[
+    <font color="#787878">一级：[辅导员]%1$s - 审批通过</font>
+    ]]></string>
+    <!--deliver-->
+    <string name="app_name">permissionforge-ng</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
