@@ -55,13 +55,11 @@ class ParameterFragment : Fragment() {
         applicantViewModel.setApplicant(
             binding.applicantNameInput.getText().toString() ,
             binding.counselorNameInput.getText().toString() ,
-            if(binding.timeInput.getText()?.toString().equals(""))
-                3
-            else
-                binding.timeInput.getText().toString().toInt(),
+            binding.timeInput.getText().toString().toIntOrNull() ?: 0,
             binding.schoolInput.getText().toString() ,
             binding.reasonInput.getText().toString() ,
-            binding.dstInput.getText().toString()
+            binding.dstInput.getText().toString(),
+            binding.homeInput.getText().toString()
         )
     }
 }

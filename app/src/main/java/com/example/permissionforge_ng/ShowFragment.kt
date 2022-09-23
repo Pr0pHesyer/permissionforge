@@ -53,12 +53,14 @@ class ShowFragment : Fragment() {
 
         binding.txtMid.text = HtmlCompat.fromHtml(
             String.format(
-            getString(R.string.txt_mid),
+                getString(R.string.txt_mid),
                 applicantViewModel.startTimeStr,
                 applicantViewModel.endTimeStr,
                 applicantViewModel.tel,
                 applicantViewModel.reason,
-                applicantViewModel.school),
+                applicantViewModel.school,
+                applicantViewModel.dst,
+                applicantViewModel.home),
 
             HtmlCompat.FROM_HTML_MODE_LEGACY)
 
