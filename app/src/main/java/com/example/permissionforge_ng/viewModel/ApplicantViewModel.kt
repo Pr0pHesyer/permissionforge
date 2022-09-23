@@ -40,13 +40,18 @@ class ApplicantViewModel: ViewModel() {
     val tel: String
         get() = _tel
 
+    private lateinit var _home: String
+    val home: String
+        get() = _home
+
     fun setApplicant(
         applicantName: String,
         counselorName: String,
         time: Int,
         school: String,
         reason: String,
-        dst: String
+        dst: String,
+        home: String
     ){
         _applicantName = applicantName
         _counselorName = counselorName
@@ -54,6 +59,7 @@ class ApplicantViewModel: ViewModel() {
         _school = school
         _reason = reason
         _dst = dst
+        _home = home
 
         val startTime = Calendar.getInstance()
         val endTime = Calendar.getInstance()

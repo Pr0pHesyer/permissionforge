@@ -2,9 +2,10 @@
     <string name="hint_请假人姓名">请假人姓名</string>
     <string name="hint_辅导员姓名">辅导员姓名</string>
     <string name="hint_时长">时长（小时）</string>
-    <string name="hint_地点">申请地点（学校位置）</string>
+    <string name="hint_地点">发起位置</string>
     <string name="hint_请假原因">请假原因</string>
     <string name="hint_目的地">目的地</string>
+    <string name="hint_宿舍信息">宿舍信息</string>
     <string name="main_activity_caption">输入你的信息，以生成假条。</string>
     <string name="generate">生成</string>
 
@@ -16,6 +17,7 @@
     <br>
     <font color="#787878">销假规则：</font>
     <font color="#fbcc42">离校请假需要销假，非离校请假无需销假</font>
+    <font color="#97cbfa"> 查看></font>
     <br>
     <font color="#787878">实际休假时间：</font>
     <font color="#000000">%1$s ~ %2$s （共 %3$d 小时）</font>>
@@ -44,6 +46,14 @@
     <br>
     <font color="#787878">抄送人：　　 </font>
     <font color="#000000">无</font>
+    <br>
+    <font color="#787878">目的地：　　 </font>
+    <font color="#000000">%6$s</font>
+    <br>
+    <font color="#787878">宿舍信息：　　 </font>
+    <font color="#000000">%7$s</font>
+    <br>
+    <font color="#fbcc42">本人承诺填写的信息真实有效，并对本次提交请假申请的信息真实性负责</font>
     ]]>
     </string>
 
@@ -52,7 +62,7 @@
     ]]></string>
 
     <string name="txt_passed"><![CDATA[
-    <font color="#787878">一级：[辅导员]%1$s - 审批通过</font>
+    <font color="#787878">一级：[辅导员]%1$s - 审批</font><font color="#22b14c"通过</font>
     ]]></string>
     <!--deliver-->
     <string name="app_name">permissionforge-ng</string>

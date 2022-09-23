@@ -158,7 +158,7 @@
                     android:paddingBottom="5dp"
                     android:singleLine="false"
                     android:text="testingdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
-                    android:textSize="16sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/textView5"
@@ -186,7 +186,7 @@
                     android:paddingBottom="8dp"
                     android:text="我的 请假申请"
                     android:textColor="#000000"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -202,7 +202,7 @@
                     android:paddingBottom="8dp"
                     android:singleLine="false"
                     android:text="testing"
-                    android:textSize="16sp" />
+                    android:textSize="13sp" />
 
                 <TextView
                     android:id="@+id/textView7"
@@ -220,14 +220,12 @@
 
                     <ImageView
                         android:id="@+id/img_line"
-                        android:layout_width="31dp"
-                        android:layout_height="32dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_width="29dp"
+                        android:layout_height="20dp"
                         android:scaleType="fitXY"
-                        app:layout_constraintBottom_toBottomOf="@+id/img_greenc"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/img_bluec"
-                        app:layout_constraintVertical_bias="0.48"
+                        app:layout_constraintStart_toStartOf="@+id/img_bluec"
+                        app:layout_constraintTop_toBottomOf="@+id/img_bluec"
+                        android:layout_marginTop="-3dp"
                         app:srcCompat="@drawable/line" />
 
                     <ImageView
@@ -246,11 +244,11 @@
                         android:layout_width="29dp"
                         android:layout_height="29dp"
                         android:layout_marginStart="20dp"
-                        android:layout_marginTop="68dp"
                         android:padding="5dp"
                         android:scaleType="fitCenter"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/img_line"
+                        android:layout_marginTop="-3dp"
                         app:srcCompat="@drawable/circle_green" />
 
                     <TextView
@@ -271,19 +269,15 @@
 
                     <TextView
                         android:id="@+id/txt_passed"
-                        android:layout_width="0dp"
+                        android:layout_width="342dp"
                         android:layout_height="30dp"
-                        android:layout_marginStart="49dp"
-                        android:layout_marginEnd="20dp"
                         android:gravity="center_vertical"
                         android:paddingStart="5dp"
                         android:paddingEnd="5dp"
                         android:text="审批通过"
                         android:textAlignment="gravity"
-                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/img_greenc"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/txt_initiate" />
+                        app:layout_constraintTop_toBottomOf="@+id/img_line" />
 
                     <TextView
                         android:id="@+id/txt_my_req2"
@@ -306,13 +300,13 @@
                         android:id="@+id/txt_advice"
                         android:layout_width="0dp"
                         android:layout_height="30dp"
-                        android:layout_marginStart="49dp"
                         android:layout_marginEnd="20dp"
                         android:background="@drawable/rounded_corner"
                         android:padding="5dp"
                         android:text="审批意见：无"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/img_greenc"
                         app:layout_constraintTop_toBottomOf="@+id/txt_passed" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -320,48 +314,57 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#EFEFEF"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button"
-                        android:layout_width="match_parent"
+                        android:id="@+id/button2"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginRight="20dp"
-                        android:background="#3F51B5"
-                        android:backgroundTint="#1E88E5"
-                        android:padding="10dp"
-                        android:text="去销假"
-                        android:textSize="18sp" />
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:backgroundTint="#FFFFFF"
+                        android:padding="0dp"
+                        android:text="转发"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
 
                     <Button
                         android:id="@+id/button3"
-                        android:layout_width="match_parent"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
                         android:background="#FFFFFF"
                         android:backgroundTint="#FFFFFF"
                         android:padding="10dp"
                         android:text="申请续假"
                         android:textColor="#000000"
-                        android:textSize="18sp" />
+                        android:textSize="16sp" />
 
                     <Button
-                        android:id="@+id/button2"
-                        android:layout_width="match_parent"
+                        android:id="@+id/button"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="20dp"
-                        android:background="#FFFFFF"
-                        android:backgroundTint="#FFFFFF"
-                        android:padding="10dp"
-                        android:text="转发"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="1"
+                        android:background="#3F51B5"
+                        android:backgroundTint="#1E88E5"
+                        android:padding="0dp"
+                        android:text="去销假"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textColor="#ffffff"/>
+
                 </LinearLayout>
 
             </LinearLayout>
